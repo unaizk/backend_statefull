@@ -4,7 +4,7 @@ exports.startInterval = void 0;
 const store_1 = require("./store");
 function startInterval() {
     setInterval(() => {
-        console.log(store_1.games);
+        store_1.gameManager.log();
     }, 5000);
 }
 exports.startInterval = startInterval;
